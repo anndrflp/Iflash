@@ -1,6 +1,21 @@
-n1 = 12
-n2 = 32
+import Pessoa
 
-n3 = n1 + n2
+def menuprincipal():
 
-print(n3)
+    print('Navegue pelo menu:' )
+    print('1 - Gerar ordem de serviço ')
+    print('2 - Cadastrar pessoa')
+
+    navegacao = int(input())
+
+    if navegacao == 1:
+        print('Sair')
+    else:
+
+        pp = Pessoa()
+        pp.idade = 20
+        print(pp.idade)
+
+menuprincipal()
+
+
